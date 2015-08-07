@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 在未显示完的文本后面添加省略号 -->
+
+
+    <!-- 在最前面添加省略号 -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFF"
+        android:ellipsize="start"
+        android:maxLines="2"
+        android:singleLine="false"
+        android:text="维基百科的目标是建立拥有人类全部知识的百科全书"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFF"
+        android:ellipsize="middle"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="维基百科的目标是建立拥有人类全部知识的百科全书。"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFF"
+        android:ellipsize="end"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="维基百科的目标是建立拥有人类全部知识的百科全书。"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+</LinearLayout>

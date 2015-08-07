@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 用TextView设置跑马灯效果,除了要设置android:ellipsize="marquee"
+    	 外还要设置android:marqueeRepeatLimit（循环显示的次数）属性
+ 		   和focusable属性设置android:focusable属性的目的是使TextView处于焦点状态，
+ 		   也就是说，只有处于焦点状态的TextView控件才会有走马灯效果 -->
+    <!-- 有问题。跑马灯没有显示出来 -->
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFF"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="维基百科的目标是建立拥有人类全部知识的百科全书。"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+</LinearLayout>

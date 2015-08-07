@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 选项按钮控件 -->
+    <!--
+   	 	选项按钮可用于多选1的应用中，如果想在选中某一个按钮后，其它的选项按钮处于未选中状态
+		需要将<RadioButton>标签放置在<RadioGroup>中
+    -->
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选项1" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选项2" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选项3"
+            android:drawableLeft="@drawable/star"
+            android:drawableTop="@drawable/circle"
+            android:drawableRight="@drawable/star"
+            android:drawableBottom="@drawable/circle"
+            android:drawablePadding="10dp"
+             />
+    </RadioGroup>
+
+</LinearLayout>

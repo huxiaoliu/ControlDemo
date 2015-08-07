@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 使用 android:lineSpacingExtra设置精确的行间距 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:lineSpacingExtra="20dp"
+        android:text="第一行的文本\n第二行的文本（行间距为20dp）"
+        android:textColor="#000" />
+
+    <!-- 使用android:lineSpacingMultiplier属性设置大概的行间距 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="#FFF"
+        android:lineSpacingMultiplier="1.8"
+        android:text="第一行的文本\n第二行的文本（行间距是默认行间距的1.8倍）"
+        android:textColor="#000" />
+
+    <!-- 使用style资源设置行间距，如果有多个控件需要使用行间距，用这个方法会很方便进行维护 -->
+
+    <TextView
+        style="@style/line_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFF"
+        android:text="第一行的文本\n第二行的文本（行间距是标准行间距的1.5倍）"
+        android:textColor="#000" />
+
+    <!-- 使用setLineSpace方法设置行间距 -->
+
+    <TextView
+        android:id="@+id/textview_linespace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFF"
+        android:text="第一行的文本\n第二行的文本（用代码设置行间距）"
+        android:textColor="#000" />
+
+</LinearLayout>

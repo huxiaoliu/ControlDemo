@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<EditText 
+	    android:id="@+id/face_edittext"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:lines="3"
+	    android:layout_gravity="left|top"
+	    />
+	
+	<Button 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="随机插入表情"	    
+	    android:onClick="onClick_RandomFace"
+	    android:layout_marginTop="10dp"
+	    />
+    
+    
+    
+</LinearLayout>
